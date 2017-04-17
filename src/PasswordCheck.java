@@ -104,22 +104,6 @@ public class PasswordCheck {
         return min;
     }
 
-//    public int minLarger(List<Integer> replaces, List<Integer> indexes, String s, int min, int offset){
-//        if(replaces.size()>0) {
-//            for (int i = 0; i < replaces.size(); i++) {
-//                int index = replaces.get(i);
-//                s = s.substring(0, index) + change(s.charAt(index)) + s.substring(index + 1);
-//            }
-//            min = replaces.size() + strongPasswordChecker(s,min>=2);
-//        }
-//        else {
-//            for(int i = offset-1; i>= 0; i--){
-//                int index = indexes.get(i);
-//                s = s.substring(0,index) + s.substring(index+1);
-//            }
-//            min = offset + strongPasswordChecker(s,hasAll);
-//        }
-//    }
     public char change(char c){
         if(c<='Z' && c>='A'){
             return (char)(c + 'a'-'A');
