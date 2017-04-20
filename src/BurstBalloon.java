@@ -1,60 +1,37 @@
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
-
 /**
+ *
  * @author yuminchen
  * @version V1.0
  * @date 2017/4/19
  */
 public class BurstBalloon {
 
-    public int maxCoins(int[] nums) {
-        int sum = 0;
-        if(nums.length==0){
-            return 0;
-        }
-        else if(nums.length==1){
-            return nums[0];
-        }
+    public int maxCoins(int[] iNums) {
+        int[] nums = new int[iNums.length + 2];
+        int n = 1;
+        for (int x : iNums) if (x > 0) nums[n++] = x;
+        nums[0] = nums[n++] = 1;
 
 
-        List<Node> nodes = new ArrayList<>();
+        int[][] memo = new int[n][n];
+        return burst(memo, nums, 0, n - 1);
+    }
 
-        for(int i = 0 ; i < nums.length; i++){
-            if(i == 0){
-                nodes.add(new Node(1,nums[0],nums[1]));
-            }
-            else if(i == nums.length-1){
-                nodes.add(new Node(nums[i-1],nums[i],1));
-            }
-            else {
-                nodes.add(new Node(nums[i-1],nums[i],nums[i+1]));
-            }
-        }
-
-        nodes.sort(Comparator.comparingInt(n -> n.value));
-        for(Node o : nodes) {
-            System.out.println(o.left + " " + o.value + " "+ o.right);
-            sum += o.left * o.value * o.right;
-        }
-        return sum;
+    public int burst(int[][] memo, int[] nums, int left, int right) {
+        if (left + 1 == right) return 0;
+        if (memo[left][right] > 0) return memo[left][right];
+        int ans = 0;
+        for (int i = left + 1; i < right; ++i)
+            ans = Math.max(ans, nums[left] * nums[i] * nums[right]
+                    + burst(memo, nums, left, i) + burst(memo, nums, i, right));
+        memo[left][right] = ans;
+        return ans;
     }
 
     public static void main(String[] args) {
         System.out.println(new BurstBalloon().maxCoins(new int[]{3, 1, 5, 8}));
     }
 
+
 }
 
-class Node{
-    int value;
-    int left;
-    int right;
-
-    public Node(int left, int value,int right) {
-        this.value = value;
-        this.left = left;
-        this.right = right;
-    }
-}
