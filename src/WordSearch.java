@@ -16,7 +16,7 @@ public class WordSearch {
         yBound = yl;
         for(int i = 0; i < xl; i++){
             for(int j = 0; j < yl; j++){
-                if(exist(board,word,i,j,0)){
+                if(trueExist(board,word,i,j)){
                     return true;
                 }
             }
@@ -25,7 +25,35 @@ public class WordSearch {
         return false;
     }
 
+    public boolean trueExist(char[][] board, String word, int x, int y) {
+        if (word.length() == 0){
+            return true;
+        }
+        if (y<0 || x<0 || y == yBound || x == xBound) {
+            return false;
+        }
+
+        if (board[x][y] != word.charAt(0)) {
+            return false;
+        }
+
+        String next = word.substring(1);
+        // this is a nice step, for the next all recursion know the value can't be used
+        board[x][y] ^= 256;
+
+        boolean result = trueExist(board, next, x-1, y)
+                || trueExist(board, next, x+1, y)
+                || trueExist(board, next, x, y-1)
+                || trueExist(board, next, x, y+1);
+
+        board[x][y] ^= 256;
+        return result;
+
+    }
     /**
+     * my wrong answer, ignore the pasted node!
+     * to warning not to make the same mistake!
+     *
      * @param board
      * @param word
      * @param x
