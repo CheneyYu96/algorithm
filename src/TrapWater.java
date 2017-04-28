@@ -13,6 +13,10 @@ public class TrapWater {
         int leftBound=0;
         int rightBound=0;
         while(a<=b){
+            /*
+            一格一格考虑，
+            双向：左边下降考虑增加，右边上升考虑增加
+             */
             leftBound=Math.max(leftBound,height[a]);
             rightBound=Math.max(rightBound,height[b]);
             if(leftBound<rightBound){
