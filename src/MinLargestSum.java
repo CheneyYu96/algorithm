@@ -26,11 +26,9 @@ public class MinLargestSum {
         }
 
         int min = Integer.MAX_VALUE;
+        int sum = 0;
         for(int i = index; i < nums.length; i++){
-            int sum = 0;
-            for(int j = index; j <= i; j++){
-                sum += nums[j];
-            }
+            sum += nums[i];
             min = Math.min(min, Math.max(sum, subSplitArray(nums, mem, i + 1, m-1)));
         }
 
