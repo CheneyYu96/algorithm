@@ -4,17 +4,20 @@
  * @date 2017/5/7
  */
 public class OutBoundPath {
+    int mod = 1000000007;
 
     public int findPaths(int m, int n, int N, int i, int j) {
-        int count = 0;
-        int mem[][][] = new int[m][n][N+1];
+        long count = 0;
+        long mem[][][] = new long[m][n][N+1];
+
         for(int times = N; times > 0; times--){
-            count += findSubPaths(m, n, times, i, j, mem);
+            count = (count + findSubPaths(m, n, times, i, j, mem))%mod;
+
         }
-        return count;
+        return (int)count%mod;
     }
 
-    private int findSubPaths(int m, int n, int N, int i, int j, int[][][] mem) {
+    private long findSubPaths(int m, int n, int N, int i, int j, long[][][] mem) {
         if(N == 0){
             return 0;
         }

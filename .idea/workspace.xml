@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5588f8cd-e7c2-4f79-af76-c999c9ad42b5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/OutBoundPath.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/algorithm/MinLargestSum.class" afterPath="$PROJECT_DIR$/out/production/algorithm/MinLargestSum.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/OutBoundPath.java" afterPath="$PROJECT_DIR$/src/OutBoundPath.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -53,11 +52,11 @@
       <file leaf-file-name="OutBoundPath.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/OutBoundPath.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="598">
-              <caret line="50" column="68" lean-forward="false" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
+            <state relative-caret-position="112">
+              <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="29" />
               <folding>
-                <element signature="e#1311#1312#0" expanded="true" />
-                <element signature="e#1389#1390#0" expanded="true" />
+                <element signature="e#1366#1367#0" expanded="true" />
+                <element signature="e#1444#1445#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -698,12 +697,12 @@
       <workItem from="1493876587464" duration="1109000" />
       <workItem from="1494047153536" duration="1654000" />
       <workItem from="1494050014800" duration="441000" />
-      <workItem from="1494165149400" duration="1283000" />
+      <workItem from="1494165149400" duration="2408000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="48718000" />
+    <option name="totallyTimeSpent" value="49843000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -727,7 +726,7 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22740525" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25801748" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32944608" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -757,7 +756,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="40" />
+      <option name="time" value="42" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1091,8 +1090,8 @@
         <state relative-caret-position="289">
           <caret line="440" column="25" lean-forward="false" selection-start-line="440" selection-start-column="25" selection-end-line="440" selection-end-column="25" />
           <folding>
-            <element signature="e#17181#17182#0" expanded="true" />
-            <element signature="e#17264#17265#0" expanded="true" />
+            <element signature="e#17181#17182#0" expanded="false" />
+            <element signature="e#17264#17265#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1110,8 +1109,8 @@
         <state relative-caret-position="300">
           <caret line="147" column="19" lean-forward="false" selection-start-line="147" selection-start-column="19" selection-end-line="147" selection-end-column="19" />
           <folding>
-            <element signature="e#5748#5749#0" expanded="true" />
-            <element signature="e#5784#5785#0" expanded="true" />
+            <element signature="e#5748#5749#0" expanded="false" />
+            <element signature="e#5784#5785#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1126,11 +1125,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/OutBoundPath.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="598">
-          <caret line="50" column="68" lean-forward="false" selection-start-line="50" selection-start-column="68" selection-end-line="50" selection-end-column="68" />
+        <state relative-caret-position="112">
+          <caret line="16" column="29" lean-forward="false" selection-start-line="16" selection-start-column="26" selection-end-line="16" selection-end-column="29" />
           <folding>
-            <element signature="e#1311#1312#0" expanded="true" />
-            <element signature="e#1389#1390#0" expanded="true" />
+            <element signature="e#1366#1367#0" expanded="true" />
+            <element signature="e#1444#1445#0" expanded="true" />
           </folding>
         </state>
       </provider>
