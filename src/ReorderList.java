@@ -79,4 +79,13 @@ class ListNode {
     int val;
     ListNode next;
     public ListNode(int x) { val = x; }
+
+    @Override
+    public String toString() {
+        String s = val + "";
+        if(next!=null){
+            s += "->" + next.toString();
+        }
+        return s;
+    }
 }
